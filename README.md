@@ -15,28 +15,28 @@ build blog use nginx php mysql linux
  regbirthday  生日      date                 not null,
  regemail     邮箱      varchar(50)          not null,
  regsex       性别      varchar(4),          0 男 1 女
- regqq        qq      varchar(20),                  
+ regqq        qq      varchar(20), 
  regsign      签名     varchar(200),
  regintroduce 自我介绍  mediumtext,
  fig          管理员标记     int(1)             default 0;
 
 //文章表  article
-id           文章  int           主键自增 , 
-title        题目  varchar(100)  not null, 
+id           文章  int            主键自增 , 
+title        题目  varchar(100)   not null, 
 content      内容  mediumtext, 
 author       作者  varchar(30)    not null,
-now          日期  datetime       
+now          日期  datetime 
 
 //评论  comment
-id          评论    int          主键自增
-fileid      文章id  int          not null, 
+id          评论    int           主键自增
+fileid      文章id  int           not null, 
 username    用户名  varchar(30)   not null, 
-content     评论内容 text        not null,
-datetime    日期    datetime     not null,
+content     评论内容 text         not null,
+datetime    日期    datetime      not null,
 
 //公告信息，网站的一些信息public
-id    公告id      int         主键自增  
-title 题目        varchar(50)  not null, 
-content 内容      varchar(200)  not null
+id    公告id      int           主键自增 
+title 题目        varchar(50)    not null, 
+content 内容      varchar(200)   not null
 pub_time  发布时间  date         not null
  
