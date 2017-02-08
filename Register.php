@@ -10,9 +10,9 @@
 
 <body style="MARGIN-TOP: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px; TEXT-ALIGN: center"> 
 
-<TABLE width="757" cellPadding=0 cellSpacing=0 style="WIDTH: 755px"> 
+<TABLE width="757" cellPadding=0 cellSpacing=0 style="WIDTH: 755px" align="center"> 
   <TBODY> 
-    <TR> <TD style="VERTICAL-ALIGN: bottom; HEIGHT: 6px" colSpan=3 background="images/F_head.jpg"> <table width="100%" height="149"  border="0" cellpadding="0" cellspacing="0">
+    <TR> <TD style="VERTICAL-ALIGN: bottom; HEIGHT: 6px" colSpan=3 background="images/f_head.jpg"> <table width="100%" height="149"  border="0" cellpadding="0" cellspacing="0">
         <tr>
           <td height="51" align="right">
 		  <br>
