@@ -6,17 +6,17 @@ $pwd=$_POST[txt_pwd];
 $sql=mysql_query("select * from user where regname='".$name."' and regpwd='".$pwd."'");
 $result=mysql_fetch_array($sql);
 if($result!=""){
-$_SESSION[fig]=$result[fig];
-$_SESSION[username]=$name;
+	$_SESSION[fig]=$result[fig];
+	$_SESSION[username]=$name;
 ?>
 <script language="javascript">
-	alert("µÇÂ¼³É¹¦");window.location.href="file.php";
+	window.location.href="file.php";
 </script>
 <?php
 }else{
 ?>
 <script language="javascript">
-	alert("¶Ô²»Æğ£¬ÄúÊäÈëµÄÓÃ»§Ãû»òÃÜÂë²»ÕıÈ·£¬ÇëÖØĞÂÊäÈë!");window.location.href="index.php";
+	alert("å¯¹ä¸èµ·ï¼Œæ‚¨è¾“å…¥çš„ç”¨æˆ·åæˆ–å¯†ç ä¸æ­£ç¡®ï¼Œè¯·é‡æ–°è¾“å…¥!");window.location.href="index.php";
 </script>
 <?php
 	}
