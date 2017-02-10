@@ -11,15 +11,15 @@ build blog use nginx php mysql linux
 
 ### //用户表 user  
     id           用户id     int                  主键 自增  
-    regname      用户名     varchar(30),         not null  
-    regrealname  真实姓名   varchar(30),         not null  
-    regpwd       密码       varchar(30)          not null,  
-    regbirthday  生日        date                 not null,  
-    regemail     邮箱        varchar(50)          not null,  
-    regsex       性别        varchar(4),          0 男 1 女  
-    regqq        qq         varchar(20),   
-    regsign      签名        varchar(200),  
-    regintroduce 自我介绍    mediumtext,  
+    name      用户名     varchar(30),         not null  
+    realname  真实姓名   varchar(30),         not null  
+    pwd       密码       varchar(30)          not null,  
+    birthday  生日        date                 not null,  
+    email     邮箱        varchar(50)          not null,  
+    sex       性别        varchar(4),          0 男 1 女  
+    qq        qq         varchar(20),   
+    sign      签名        varchar(200),  
+    introduce 自我介绍    mediumtext,  
     fig          管理员标记     int(1)             default 0;   
 
 ### //文章表  article  
@@ -31,7 +31,7 @@ build blog use nginx php mysql linux
 
 ### //评论  comment  
     id          评论    int           主键自增  
-    fileid      文章id  int            not null,   
+    articleId   文章id  int            not null,   
     username    用户名  varchar(30)    not null,   
     content     评论内容 text          not null,  
     datetime    日期    datetime      not null,  
