@@ -73,7 +73,7 @@
             <tr bgcolor="#FFFFFF"> 
               <td width=22% align="right" valign=middle class='f_one'> 用户名</td> 
               <td width=78% align="left"  class='f_one'><input name='txt_regname' type=text id="txt_regname" value='' size=20 maxlength=14> 
-                <a href="" onClick="javascript:openwin(myform.txt_regname.value)">[检测用户]</a> <font color=red>*</font> 
+                <a href="#" onClick="javascript:openwin(myform.txt_regname.value)">[检测用户]</a> <font color=red>*</font> 
               <div id="check_info"></div></td> 
             </tr> 
             <tr bgcolor="#FFFFFF"> 
@@ -85,7 +85,7 @@
             <tr bgcolor="#FFFFFF"> 
               <td align="right" valign=middle > 密码</td> 
               <td align="left"> <input name=txt_regpwd type=password id="txt_regpwd" size=20 maxlength=75> 
-              英文字母或数字等不少于3位<font color=red>*</font></td> 
+              英文字母或数字等不少于6位<font color=red>*</font></td> 
             </tr> 
             <tr bgcolor="#FFFFFF"> 
               <td align="right" valign=middle> 确认密码</td> 

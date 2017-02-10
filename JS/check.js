@@ -17,8 +17,8 @@ function check(myform){
 	if (myform.txt_regpwd.value==""){
 		alert("请输入密码！");myform.txt_regpwd.focus();return false;
 	}
-	if (myform.txt_regpwd.value.length<3){
-		alert("密码至少为3位，请重新输入！");myform.txt_regpwd.focus();return false;
+	if (myform.txt_regpwd.value.length<6){
+		alert("密码至少为6位，请重新输入！");myform.txt_regpwd.focus();return false;
 	}		
 	if (myform.txt_regpwd2.value==""){
 		alert("请确认密码！");myform.txt_regpwd2.focus();return false;

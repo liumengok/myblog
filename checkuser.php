@@ -3,7 +3,7 @@ session_start();
 include "Conn/conn.php";
 $name=$_POST[txt_user];
 $pwd=$_POST[txt_pwd];
-$sql=mysql_query("select * from user where regname='".$name."' and regpwd='".$pwd."'");
+$sql=mysql_query("select * from user where name='".$name."' and pwd='".$pwd."'");
 $result=mysql_fetch_array($sql);
 if($result!=""){
 	$_SESSION[fig]=$result[fig];

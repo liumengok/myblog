@@ -1,7 +1,7 @@
 <?php 
 include "Conn/conn.php";
 $UserName=$_GET[x];
-$sql=mysql_query("select * from user where regname = '$UserName'");
+$sql=mysql_query("select * from user where name = '$UserName'");
 $result=mysql_fetch_array($sql);
 if ($result!=false){
 	echo "<meta http-equiv='Content-Type'' content='text/html; charset=utf-8'>";
