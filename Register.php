@@ -15,8 +15,8 @@
     <TR> <TD style="VERTICAL-ALIGN: bottom; HEIGHT: 6px" colSpan=3 background="images/f_head.jpg"> <table width="100%" height="149"  border="0" cellpadding="0" cellspacing="0">
         <tr>
           <td height="51" align="right">
-		  <br>
-		  <table width="262" border="0" cellspacing="0" cellpadding="0">
+ 	   <br>
+	   <table width="262" border="0" cellspacing="0" cellpadding="0">
             <tr align="left">
               <td width="26" height="20"><a href="index.php"></a></td>
               <td width="71" class="word_white"><a href="index.php"><span style="FONT-SIZE: 9pt; COLOR: #000000; TEXT-DECORATION: none">首  页</span></a></td>
@@ -24,42 +24,39 @@
               <td width="55"><a href="<?php echo (!isset($_SESSION[username])?'Register.php':'safe.php'); ?>"><span style="FONT-SIZE: 9pt; COLOR: #000000; TEXT-DECORATION: none"><?php echo (!isset($_SESSION[username])?"博客注册":"安全退出"); ?></span></a></td>
               <td width="23">&nbsp;</td>
             </tr>
-          </table>
-		  <br></td>
+           </table>
+	  <br>
+	 </td>
         </tr>
         <tr>
           <td height="66" align="right"><p>&nbsp;</p></td>
         </tr>
         <tr>
-		<form name="form" method="post" action="checkuser.php">
+	  <form name="form" method="post" action="checkuser.php">
           <td height="20" valign="baseline">
             <table width="100%"  border="0" cellpadding="0" cellspacing="0">
               <tr>
                 <td width="32%" height="20" align="center" valign="baseline">&nbsp; </td>
                 <td width="67%" align="left" valign="baseline" style="text-indent:10px;">
-				<?php
-		  	if(!isset($_SESSION[username])){
-		  ?>
-				用户名:
-                  <input  name=txt_user size="10">
-密 码:
-<input  name=txt_pwd type=password style="FONT-SIZE: 9pt; WIDTH: 65px" size="6">
-<input style="FONT-SIZE: 9pt"  type=submit value=登录 name=sub_dl onClick="return f_check(form)">
-&nbsp; 
-<?php
-				}else{
-			?>
-				<font color="red"><?php echo $_SESSION[username]; ?></font>&nbsp;&nbsp;欢迎您的光临！！！
-</font>
-			<?
-				}
-			?>
-</td>
+		<?php
+			if(!isset($_SESSION[username])){
+		?>
+		用户名:<input  name=txt_user size="10">
+		密 码:<input  name=txt_pwd type=password style="FONT-SIZE: 9pt; WIDTH: 65px" size="6">
+		<input style="FONT-SIZE: 9pt"  type=submit value=登录 name=sub_dl onClick="return f_check(form)">&nbsp; 
+		<?php
+			}else{
+		?>
+			<font color="red"><?php echo $_SESSION[username]; ?></font>&nbsp;&nbsp;欢迎您的光临！</font>
+		<?
+			}
+		?>
+		</td>
                 <td width="1%" align="center" valign="baseline">&nbsp;</td>
               </tr>
             </table> 
-			</td>
-		  </form>
+	   </td>
+	  </form>
         </tr>
       </table></TD> 
     </TR> 
@@ -84,8 +81,7 @@
             <tr> 
             <tr bgcolor="#FFFFFF"> 
               <td align="right" valign=middle > 密码</td> 
-              <td align="left"> <input name=txt_regpwd type=password id="txt_regpwd" size=20 maxlength=75> 
-              英文字母或数字等不少于6位<font color=red>*</font></td> 
+              <td align="left"> <input name=txt_regpwd type=password id="txt_regpwd" size=20 maxlength=75> 英文字母或数字等不少于6位<font color=red>*</font></td> 
             </tr> 
             <tr bgcolor="#FFFFFF"> 
               <td align="right" valign=middle> 确认密码</td> 
@@ -103,7 +99,6 @@
               <td align="left"  > <input name=txt_regemail type=text id="txt_regemail" value='' size=35 maxlength=75> 
               <font color='#000000'>公开邮箱 <font color=red>*</font></font> </td> 
             </tr> 
-
 
             <tr align="left" bgcolor="#EFF7DE"> 
               <td height=22 colspan=2 class=right_head><span class="tableBorder_LTR">选填内容</span></td> 
