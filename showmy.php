@@ -140,14 +140,14 @@ if (document.myform.txt_content.value==""){
 				   $page_count=ceil($message_count/$page_size);	  //根据记录总数除以每页显示的记录数求出所分的页数
 				   $offset=($page-1)*$page_size;			//计算下一页从第几条数据开始循环  
 				   for ($i=1; $i<2; $i++) {         //计算每页显示几行记录信息
-				   if ($i==1) {
-				   	$sql=mysql_query("select * from comment where articleId='$file_id1' order by id desc limit $offset, $page_size");				$result=mysql_fetch_array($sql);
-				   }
-				   if($result==false){
-					echo "<font color=#ff0000>对不起，没有相关评论!</font>";
-				   }
-				   else{
-					do{
+				   	if ($i==1) {
+				   		$sql=mysql_query("select * from comment where articleId='$file_id1' order by id desc limit $offset, $page_size");				$result=mysql_fetch_array($sql);
+				   	}
+				   	if($result==false){
+						echo "<font color=#ff0000>对不起，没有相关评论!</font>";
+				   	}
+				   	else{
+						do{
 		?> 
                 <tr> 
                   <td height="57" align="center" valign="top" >
@@ -164,22 +164,22 @@ if (document.myform.txt_content.value==""){
                         <td align="center">评论内容</td> 
                         <td colspan="4"><?php echo $result[content]; ?></td> 
                         <td>
-				<?php 
-					if ($bool){
-				?>
+					<?php 
+						if ($bool){
+					?>
                                 <a href="del_comment.php?comment_id=<?php echo $result[id]?>"><img src="images/A_delete.gif" width="52" height="16" alt="删除博客文章评论" onClick="return d_chk();"></a>
-                                <?php
-					}
-				?>
+                                	<?php
+						}
+					?>
 			</td>
                       </tr> 
                     </table>
 		   </td> 
                 </tr> 
-                <?php
-				}while($result=mysql_fetch_array($sql));
-			}
-		?> 
+                	<?php
+					}while($result=mysql_fetch_array($sql));
+				}
+			?> 
               </table> 
               <table width="660" border="0" align="center" cellpadding="0" cellspacing="0"> 
                 <tr bgcolor="#EFF7DE"> 
